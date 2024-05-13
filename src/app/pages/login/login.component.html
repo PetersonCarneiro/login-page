@@ -1,6 +1,25 @@
 <app-default-login-layout
- title="Login into your account"
- primaryBtnText="Login Now"
- secondaryBtnText="Signup Now">
+    title="Login into your account"
+    primaryBtnText="Login Now"
+    secondaryBtnText="Signup Now"
+ >
+ <Form [formGroup]="loginForm">
+    <app-primary-input
+    formName="email"
+    type="email"
+    label="Email"
+    placeholder="peters.preste@gmail.com"
+    >
+        <img src="/assets/svg/icon_msg.svg" alt="">
+    </app-primary-input>
+
+    <app-primary-input
+    formName="password"
+    type="password"
+    label="Your Password"
+    >
+        <img src="/assets/svg/icon_password.svg" alt="">
+    </app-primary-input>
+ </Form>
  
 </app-default-login-layout>
