@@ -3,4 +3,12 @@ form{
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-top: 34px;
+
+    span{
+        font-size: 14px;
+        text-decoration: underline;
+        color: aqua;
+        text-align: right;
+    }
 }
