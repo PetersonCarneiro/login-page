@@ -10,6 +10,7 @@ import { Component, EventEmitter, Input, Output, input } from '@angular/core';
 export class DefaultLoginLayoutComponent {
   @Input() title: string = "";
   @Input() primaryBtnText: string = "";
+  @Input() disablePrimaryBtn: boolean = true;
   @Input() secondaryBtnText: string = "";
 
   @Output("submit") onSubmit = new EventEmitter();
